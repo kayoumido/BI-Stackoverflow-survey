@@ -45,15 +45,15 @@ def main(argv):
         for row in csv_data:
             id = row[0]
             technologies = []
-
+            
             # extract the data of the wanted cols
             for i in wanted_cols_index:
                 # skip NA
                 if (row[i] != "NA"):
                     technologies += row[i].split(';')
                     # remove wanted cols
-                    del row[i]
-
+                del row[i]
+            
             for tech in technologies:
                 extracted.write(id + ',' + tech.lstrip() + '\n')
 
