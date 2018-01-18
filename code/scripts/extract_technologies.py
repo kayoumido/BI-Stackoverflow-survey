@@ -39,26 +39,26 @@ def main(argv):
         ogpreocessed = open(output + os.path.basename(argv.raw), 'w+')
         # write headers in new files
         extracted.write('Respondent,Technologies\n')
-        ogpreocessed.write(','.join(headers) + '\n')
+        ogpreocessed.write(';:'.join(headers) + '\n')
 
         # get the data of the wanted cols
         for row in csv_data:
             id = row[0]
             technologies = []
-            
+
             # extract the data of the wanted cols
             for i in wanted_cols_index:
                 # skip NA
                 if (row[i] != "NA"):
                     technologies += row[i].split(';')
-                    # remove wanted cols
+                # remove wanted cols
                 del row[i]
-            
+
             for tech in technologies:
                 extracted.write(id + ',' + tech.lstrip() + '\n')
 
             # write line without the wanted cols in prcessed original file
-            ogpreocessed.write(','.join(row) + '\n')
+            ogpreocessed.write(';:'.join(row) + '\n')
 
 
 if __name__ == "__main__":
