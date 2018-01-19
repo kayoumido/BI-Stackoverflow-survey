@@ -8,10 +8,11 @@ Template for data analysis
    * [code](code/readme.md): scripts and various code to run the analysis
    * [text](text/readme.md): explanation on how to run the analysis and the final report/presentation
 
+# SO survey analysis
+This is project is a school assignment during my Business Intelligence class in the [CPNV](http://cpnv.ch/).
 
-source : https://www.kaggle.com/stackoverflow/so-survey-2017
-__Every year, Stack Overflow conducts a massive survey of people on the site, covering all sorts of information like programming languages, salary, code style and various other information. This year, they amassed more than 64,000 responses fielded from 213 
+__Every year, Stack Overflow conducts a massive survey of people on their site, covering all sorts of information like programming languages, salary, code style and various other information. This year, they amassed more than 64,000 responses fielded from 213
 countries.__
 
-## Purpose of this analysis
-Based of this years results, this analysis will determine differences between developers around the world.
+## Why this dataset ?
+The number of women developer is a lot smaller that the amount of men and I thought it would be interesting to see if they were any differences between the technologies used between them.
