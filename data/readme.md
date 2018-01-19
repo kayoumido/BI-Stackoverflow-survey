@@ -4,7 +4,7 @@
 
 _Every year, Stack Overflow conducts a massive survey of people on the site, covering all sorts of information like programming languages, salary, code style and various other information. This year, they amassed more than 64,000 responses fielded from 213 countries._
 
-Raw data can be found in the [raw](/raw/) folder in which you will find two csv files.
+Raw data can be found in the [raw](raw/) folder in which you will find two csv files.
 
 | Files                     |                                                                    |
 | ------------------------- | ------------------------------------------------------------------ |
