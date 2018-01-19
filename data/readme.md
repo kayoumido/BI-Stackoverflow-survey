@@ -36,6 +36,10 @@ Kaggle is a platform from which you can find a wide range of dataset to play wit
 
 ## Code book
 
+### raw
+
+Here is a list of the columns in the raw data that I worked with :
+
 | Variable            | Unit    |
 | ------------------- | ------- |
 | Respondent          | Numeric |
@@ -46,6 +50,26 @@ Kaggle is a platform from which you can find a wide range of dataset to play wit
 | IDE                 | String  |
 | Methodology         | String  |
 | VersionControl      | String  |
+
+### Processed
+
+#### extracted_technologies
+
+| Variable     | Unit    |
+| ------------ | ------- |
+| Respondent   | Numeric |
+| Technologies | String  |
+
+#### survey_results_clean
+
+Same as the raw file minus the following columns :
+
+* HaveWorkedLanguage
+* HaveWorkedFramework
+* HaveWorkedPlatform
+* IDE
+* Methodology
+* VersionControl
 
 ## Instruction list
 
