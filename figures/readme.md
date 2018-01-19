@@ -1,12 +1,11 @@
 # figures
 
+All the graphs were generated using [Power BI](https://powerbi.microsoft.com/en-us/) which you can see in `figures.pbix`. But since it's a paid application :wink: and it's only available on windows :disappointed:, the graphs were exported to png format.
+
 ## Exploratory Figures
- * [Exploratory figures](exploratory/readme.md)
- * Figures generated during the course of the analysis, not necessarily part of the final report/presentation
- * Does not have to be pretty
- * Could include the environement file from the tool you used (like for Power BI)
+
+In the [exploratory](exploratory) folder you'll find all the graphs that were generated once I finished messing around with power BI looking for a good graph.
 
 ## Final Figures
- * [Final figures](finale/readme.md)
- * Small subset of the original Figures
- * Must be pretty and clear
+
+In the [final](final) folder you'll find the graphs I judged good for the final report and presentation.
