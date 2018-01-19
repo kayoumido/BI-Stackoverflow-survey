@@ -20,7 +20,7 @@ def main(argv):
     with open(argv.raw, newline='') as csvfile:
         csv_data = csv.reader(csvfile, delimiter=',')
 
-
+        # check if output folder and file name was given
         output = argv.output if argv.output else 'data/processed/'
         filename = argv.processed if argv.processed else 'extracted_technologies.csv'
 
@@ -55,6 +55,7 @@ def main(argv):
                 # remove wanted cols
                 del row[i]
 
+            # generate new csv file
             for tech in technologies:
                 extracted.write(id + ',' + tech.lstrip() + '\n')
 
