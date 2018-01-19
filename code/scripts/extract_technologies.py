@@ -20,8 +20,9 @@ def main(argv):
     with open(argv.raw, newline='') as csvfile:
         csv_data = csv.reader(csvfile, delimiter=',')
 
+
         output = argv.output if argv.output else 'data/processed/'
-        filename = argv.processed if argv.processed else 'extracted.csv'
+        filename = argv.processed if argv.processed else 'extracted_technologies.csv'
 
         headers = next(csv_data)
         # get the indexes of the wanted_cols
@@ -36,7 +37,7 @@ def main(argv):
         # created processed files in output dir
         # (one for the extracted data and one for the original data without extracted data)
         extracted = open(output + filename, 'w+')
-        ogpreocessed = open(output + os.path.basename(argv.raw), 'w+')
+        ogpreocessed = open(output + 'survey_results_clean.csv', 'w+')
         # write headers in new files
         extracted.write('Respondent,Technologies\n')
         ogpreocessed.write(';:'.join(headers) + '\n')
