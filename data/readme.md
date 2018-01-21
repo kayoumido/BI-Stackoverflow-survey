@@ -95,4 +95,4 @@ $ python3 code/scripts/extract_technologies.py -r data/raw/survey_results_public
 
 You will now find the processed data files in the processed [folder](processed/)
 
-_\*For more information on the script refer to its [documentation](../code/scripts/readme.md)_
+_\*For more information on the script refer to its [documentation](../code/readme.md)_
